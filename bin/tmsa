@@ -1,0 +1,2 @@
+#!/bin/sh
+transmission-daemon && transmission-remote -a "$(xclip -selection clipboard -o)"

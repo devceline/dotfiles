@@ -1,0 +1,17 @@
+#!/bin/sh
+rawStatus="$(cmus-remote -C status | grep status | awk '{print $2}')"
+
+if [ -z $rawStatus ]; then 
+	exit 
+fi
+
+if [ $rawStatus == "playing" ]; then
+  playingStatus=''
+else 
+  playingStatus=''
+fi
+
+
+song="$(cmus-remote -C status | grep -e 'tag artist' -e title | awk '{$1=""; $2=""; print}' ORS=' -' | cut -d '-' -f 1-2)"
+
+echo "$playingStatus$song"

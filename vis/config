@@ -1,0 +1,4 @@
+audio.sources=pulse
+audio.pulse.source=0
+colors.override.terminal=true
+colors.scheme=blue,rainbow

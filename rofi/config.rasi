@@ -1,0 +1,11 @@
+configuration {
+	font: "Misc Termsyn 10";
+	padding: 20;
+	line-padding: 2;
+	separator-style: "solid";
+	hide-scrollbar: true;
+	color-normal: "#272727, #CACACA, #272727, #272727, #f6019d";
+	color-urgent: "argb:00000000, #f43753, argb:00000000, argb:00000000, #f6019d";
+	color-active: "argb:00000000, #49bbfb, argb:00000000, argb:00000000, #f6019d";
+	color-window: "#272727, #f6019d, #272727";
+}
